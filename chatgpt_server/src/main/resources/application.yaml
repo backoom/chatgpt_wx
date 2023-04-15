@@ -1,0 +1,17 @@
+server:
+  port: 8079
+
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mychatgpt?useUnicode=true&serverTimezone=Asia/Shanghai&useSSL=false
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
